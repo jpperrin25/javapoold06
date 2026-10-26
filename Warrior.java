@@ -14,6 +14,10 @@ public class Warrior extends Character {
 
     @Override
     public void attack(String weapon) {
+        if (!"hammer".equals(weapon) && !"sword".equals(weapon)) {
+            return;
+        }
+
         System.out.println(name + ": Rrrrrrrrr....");
         System.out.println(name + ": I'll crush you with my " + weapon + "!");
     }

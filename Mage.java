@@ -14,6 +14,10 @@ public class Mage extends Character {
 
     @Override
     public void attack(String weapon) {
+        if (!"magic".equals(weapon) && !"wand".equals(weapon)) {
+            return;
+        }
+
         System.out.println(name + ": Rrrrrrrrr....");
         System.out.println(name + ": Feel the power of my " + weapon + "!");
     }
